@@ -23,9 +23,9 @@ function PaginationBasic({ pokemons, limit, setPokemonPerPage, currentPage, setC
     );
   }
   return (
-    <div className='row' >
+    <div className='' >
 
-      <Pagination className='col' id='cells'>
+      <Pagination id='cells'>
 
         {items}
 

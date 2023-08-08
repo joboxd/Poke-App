@@ -24,11 +24,12 @@ function SingleCard(props) {
                     <Card.Title >{toUpper(props.pokemon_name)} </Card.Title>
                 </Card.Body >
                 <Card.Text text="light">
-                    Number:  {props.pokemon_id}
-                    <br />
-                    Ability: {props.pokemon_ability}
-                    <br />
-
+                    <p id='txt-card'>
+                        No:  {props.pokemon_id}
+                        <br />
+                        Ability: {props.pokemon_ability}
+                        <br />
+                    </p>
 
                 </Card.Text>
                 <Button variant='secondary' onClick={handleShow}>
@@ -50,15 +51,10 @@ function SingleCard(props) {
                             <br />
                             <b>Ability:</b> {toUpper(props.pokemon_ability)}
                             <br />
-                            <b>Weight:</b> {
-                                props.pokemon_weight
-                            } kg
-                            <br />
-                            <b>Type:</b>
-                            {toUpper(props.pokemon_type1 + "/" + props.pokemon_type2)}
-                            <br />
-                            <b>Move:</b>
-                            {toUpper(props.pokemon_move.move.name)}
+                            <b>Main Moves:</b> {
+                                toUpper(props.pokemon_moves.move.name)
+
+                            }
                         </div>
 
 

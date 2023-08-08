@@ -56,7 +56,7 @@ const PokemonHome = () => {
 
 
 
-      <PaginationBasic
+      {/* <PaginationBasic
         pokemons={pokemons}
         setPokemons={setPokemons}
         limit={limit}
@@ -66,7 +66,7 @@ const PokemonHome = () => {
         currentPage={currentPage}
         counter={counter}
         setCounter={setCounter}
-      />
+      /> */}
 
 
       <Cards
@@ -76,6 +76,12 @@ const PokemonHome = () => {
         loading={loading}
         limit={limit}
         onChangeLimit={onChangeLimit}
+        setPokemons={setPokemons}
+        setLoading={setLoading}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+        counter={counter}
+        setCounter={setCounter}
 
       />
       <br />
