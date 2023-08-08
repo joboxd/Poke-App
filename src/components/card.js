@@ -48,14 +48,17 @@ function SingleCard(props) {
                         <div className='col-6'>
                             <b>Number:</b>  {props.pokemon_id}
                             <br />
-                            <b>Ability:</b> {props.pokemon_ability}
+                            <b>Ability:</b> {toUpper(props.pokemon_ability)}
                             <br />
-                            <b>Main Moves:</b> {
-                                props.pokemon_moves[0].move.name + ", " +
-                                props.pokemon_moves[1].move.name + ", " +
-                                props.pokemon_moves[2].move.name + ", " +
-                                props.pokemon_moves[3].move.name
-                            }
+                            <b>Weight:</b> {
+                                props.pokemon_weight
+                            } kg
+                            <br />
+                            <b>Type:</b>
+                            {toUpper(props.pokemon_type1 + "/" + props.pokemon_type2)}
+                            <br />
+                            <b>Move:</b>
+                            {toUpper(props.pokemon_move.move.name)}
                         </div>
 
 

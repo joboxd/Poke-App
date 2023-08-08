@@ -34,6 +34,8 @@ function Cards({ pokemons, loading, pokemonPerPage, setPokemonPerPage, limit, on
   }
 
 
+
+
   if (loading) return (
     <Spinner animation="grow" variant="light" />
   )
@@ -70,7 +72,11 @@ function Cards({ pokemons, loading, pokemonPerPage, setPokemonPerPage, limit, on
                 pokemon_name={card.forms[0].name}
                 pokemon_ability={card.abilities[0].ability.name}
                 pokemon_img={card.sprites.front_default}
-                pokemon_moves={card.moves}
+                pokemon_weight={card.weight}
+                pokemon_type1={card.types[0].type.name}
+                pokemon_type2={card.types[0].type.name}
+                pokemon_move={card.moves[0]}
+
               />
             </div>
           ))
