@@ -1,0 +1,51 @@
+.pokemonCard:hover {
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.2)
+}
+
+.alert {
+    text-align: center;
+}
+
+#how_many {
+    color: aliceblue;
+    float: left;
+}
+
+#selector {
+    width: 10%;
+}
+
+#modal-img {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+
+
+
+@media screen and (min-width: 400px) {
+    .pokemonCard:hover {
+        box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.2)
+    }
+
+    .alert {
+        text-align: center;
+    }
+
+    #how_many {
+        color: aliceblue;
+    }
+
+    #selector {
+        width: 100%;
+        text-align: center;
+    }
+
+    #card {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 50%;
+    }
+}
